@@ -1,0 +1,206 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT</title>
+</head>
+<style>
+    body {
+        margin: 0%;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        color: rgba(213, 218, 223, 0.945);
+
+    }
+
+    header h2 {
+
+        padding: 15px;
+        text-shadow: 0 0 3px rgb(0, 225, 255);
+    }
+
+    nav {
+
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(218, 211, 211);
+        position: absolute;
+
+    }
+
+    nav a {
+
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        margin-left: 10px;
+        display: inline-block;
+        transition: all 1s;
+
+
+    }
+
+    .maindiv {
+        float: right;
+        position: relative;
+    }
+
+    .subdiv {
+        display: none;
+        position: absolute;
+    }
+
+    .subdiv a {
+        display: block;
+        background-color: rgb(218, 211, 211);
+    }
+
+    .maindiv:hover .subdiv {
+        display: block;
+    }
+
+    nav a:hover {
+        color: rgb(0, 16, 107);
+        background-color: crimson;
+
+    }
+
+    section {
+        width: 810px;
+        height: 500px;
+    }
+
+    section img {
+        width: 756px;
+        height: 500px;
+    }
+
+    aside {
+        width: 40%;
+        height: 1003px;
+        text-align: center;
+        float: right;
+        margin-top: -503px;
+        margin-right: -2px;
+    }
+
+    article {
+        width: 60%;
+        height: 500px;
+    }
+
+    footer {
+        width: 100%;
+        height: 10vh;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+    }
+
+    footer p {
+        padding: 20px;
+    }
+
+    ul li {
+        padding: 2px;
+    }
+
+    li::marker {
+        color: rgb(47, 0, 255);
+
+    }
+
+    iframe {
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <marquee behavior="alternate" direction="right" style="margin-top: -20px;">
+            <h2>EXPLORE THE BEATIFUL EFFIEL TOWER</h2>
+        </marquee>
+    </header>
+
+    <nav>
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">CONTACT</a>
+        <a href="">EXPLORE</a>
+        <a href="">PRICES & TIMES</a>
+
+        <div class="maindiv">
+            <a href="">SIGN_IN</a>
+            <div class="subdiv">
+                <a href="">LOGIN</a>
+                <a href="">REGISTER</a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <img src="./images/tower.jpg" title="Effiel Tower">
+    </section>
+    <aside>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916246075636!2d2.2944812999999997!3d48.858370099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sin!4v1727972063585!5m2!1sen!2sin"
+            width="600" height="100%" style="border:0;"></iframe>
+    </aside>
+    <article>
+        <h1>ABOUT EFFIEL TOWER</h1>
+        <p>
+            The Eiffel Tower, known as "La Tour Eiffel" in French, is one of the most iconic landmarks in the world,
+            located in
+            Paris, France. Here’s a detailed description based on various sources:
+        </p>
+        <h3>OVERVIEW</h3>
+        <ul>
+            <li>Height: The Eiffel Tower stands at a remarkable height of 1,083 feet (330 meters), making it the tallest
+                structure in
+                Paris and a prominent feature of the city's skyline. Originally, it was 1,024 feet (312 meters) tall
+                without antennas.
+                The tower's base forms a square measuring 410 feet (125 meters) on each side</li>
+            <li>Construction: Designed by engineer Gustave Eiffel, the tower was constructed between 1887 and 1889 for
+                the Exposition
+                Universelle, a world's fair celebrating the centennial of the French Revolution. It took just over two
+                years to
+                complete, which was considered an engineering marvel at the time</li>
+            <li>Materials: The structure is made of wrought iron and consists of approximately 18,038 individual iron
+                parts connected by
+                over 2.5 million rivets. The total weight of the tower is about 10,000 tons</li>
+        </ul>
+        <h3>DESIGN AND STRUCTURE</h3>
+        <ul>
+            <li>The Eiffel Tower features three levels accessible to visitors:
+                <ul>
+                    <li>
+                        The first level is located at 187 feet (57 meters) and includes restaurants and shops.
+                    </li>
+                    <li>
+                        The second level is at 377 feet (115 meters) and offers panoramic views of Paris.
+                    </li>
+                    <li>
+                        The third level, or observation deck, reaches up to 906 feet (276 meters) above ground,
+                        providing breathtaking views of
+                        the city
+                    </li>
+                </ul>
+            <li>The tower also has elevators that transport visitors to different levels, with a total of five lifts
+                operating from the
+                ground to the second level and additional lifts to the top</li>
+            </li>
+        </ul>
+    </article>
+    <footer>
+        <p>&copy;2024 ETBET COPYRIGHTS RESERVED</p>
+    </footer>
+</body>
+
+</html>

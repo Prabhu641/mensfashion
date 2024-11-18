@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            min-width: 100%;
+            height: 12vh;
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            
+        }
+
+        .links {
+            display: flex;
+            /* Use flex to layout the links */
+            align-items: center;
+            /* Center vertically */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding: 10px;
+            color: wheat;
+            position: relative;
+        }
+
+        .navbar a::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            bottom: -2px;
+            transition: all 0.3s;
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .d1 {
+            position: relative;
+           
+        }
+
+        .d2 {
+            display: none;
+            position: absolute;
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000;
+            /* Ensure it appears above other elements */
+        }
+
+        .d1:hover .d2 {
+            display: block;
+        }
+
+        .d2 a {
+            display: block;
+            /* Stack dropdown links */
+            color: wheat;
+            /* Ensure dropdown text is readable */
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+
+        .d2 a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Highlight on hover */
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .content .img-cards img {
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Service</a>
+            <a href="">Contact</a>
+            <div class="d1">
+                <a href="">signin</a>
+                <div class="d2">
+                    <a href="">login</a>
+                    <a href="">signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="img-cards">
+            <img src="./images/j1.jfif" alt="">
+        </div>
+        <div class="img-cards">
+            <img src="./images/j2.jfif" alt="">
+        </div>
+        <div class="img-cards">
+            <img src="./images/j3.jfif" alt="">
+        </div>
+        <div class="img-cards">
+            <img src="./images/j4.jfif" alt="">
+        </div>
+        <div class="img-cards">
+            <img src="./images/j1.jfif" alt="">
+        </div>
+        <div class="img-cards">
+            <img src="./images/j2.jfif" alt="">
+        </div>
+        <div class="img-cards">
+            <img src="./images/j3.jfif" alt="">
+        </div>
+        <div class="img-cards">
+            <img src="./images/j4.jfif" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

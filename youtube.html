@@ -1,0 +1,278 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+        integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <style>
+        body{
+            margin: 0%;
+            box-sizing: border-box;
+            background-color: rgb(15,15,15);
+            width: 100%;
+        }
+        .header{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        img{
+            width: 100px;
+        }
+        ::placeholder{
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .search{
+            display: flex;
+            align-items: center;
+
+        }
+        .search .search-bar input{
+            width: 600px;
+            background-color: rgb(15,15,15);
+            border:1px solid rgb(64, 64, 64);
+            border-radius: 20px;
+            padding: 12px;
+            outline: none;
+            color: white;
+
+        }
+        .mirco img{
+              width: 50px;
+            height: 50px;
+        }
+        .right_icons{
+            display: flex;
+            align-items: center;
+        }
+        .right_icons img{
+            width: 50px;
+            height: 50px;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+            flex-wrap: wrap;
+            
+        }
+        .buttons button{
+            background-color:#FFFFFF1A;
+            color:#f1f1f1;
+            border: none;
+            padding:8px 15px 8px;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: bold;
+        }
+        .buttons button:hover{
+            background-color: rgba(234, 234, 234, 0.226);
+            cursor: pointer;
+        }
+        .buttons .btn{
+            background-color: white;
+            color:black;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+        }
+        .content .card{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+         .content .card img {
+            width: 270px;
+            height:270px;
+            border: 1px solid;
+            margin: 30px;
+        }
+        .sidenav{
+            position: absolute;
+       
+            height: 100vh;
+            margin-top: 50px;
+      
+            
+           
+        }
+      
+        .sidenav .img1 img{
+            width: 60px;
+            height: 50px;
+            margin: 0px;
+                 
+            
+            
+        }
+        .sidenav .img1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+.sidenav .img1 span{
+    margin-top: 2px; 
+    margin-bottom: 5px; 
+    font-size: 0.8em;
+}
+@media (max-width:768px) 
+{
+    .header .search .search-bar input{
+        width: 300px;
+    }
+   
+}
+
+    
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="sidenav">
+                <!-- <a href="">home</a> -->
+                <div class="img1">
+                    <img src="./images/home.png" alt="">
+                    <span style="color:#f1f1f1;">Home</span>
+                </div>
+                <div class="img1">
+                    <img src="./images/shorts.png" alt="">
+                    <span style="color:#f1f1f1;">Shorts</span>
+                </div>
+                <div class="img1">
+                    <img src="./images/subscription.png" alt="">
+                    <span style="color:#f1f1f1;">Subscription</span>
+            
+                </div>
+                <div class="img1">
+                    <img src="./images/you.png" alt="">
+                    <span style="color:#f1f1f1;">You</span>
+                </div>
+            
+            
+            
+            </div>
+            <div class="header">
+                <div class="logo">
+                    <img src="./images/youtub.png" alt="">
+                </div>
+                <div class="search">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="mirco">
+                        <img src="./images/microp.png" alt="">
+                    </div>
+            
+            
+                </div>
+                <div class="right_icons">
+            
+            
+                    <img src="./images/create.png" alt="">
+                    <img src="./images/notification.png" alt="">
+                    <img src="./images/profile.png" alt="">
+            
+            
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn">All</button>
+                <button>Football</button>
+                <button>Songs</button>
+                <button>AI</button>
+                <button>SKills</button>
+                <button>Movies</button>
+                <button>Comedy</button>
+                <button>Podcasts</button>
+                <button>SKills</button>
+                <button>Movies</button>
+                <button>Comedy</button>
+                <button>Podcasts</button>
+                <button>SKills</button>
+                <button>Movies</button>
+            
+            </div>
+            <div class="content">
+            
+                <div class="card">
+                    <img src="./images/v1.png">
+                    <div class="container" style="color:white;">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/v1.png">
+                    <div class="container" style="color:white;">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/v1.png">
+                    <div class="container" style="color:white;">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/v1.png">
+                    <div class="container" style="color:white;">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/v1.png">
+                    <div class="container" style="color:white;">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/v1.png">
+                    <div class="container" style="color:white;">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/v1.png">
+                    <div class="container" style="color:white;">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/v1.png">
+                    <div class="container" style="color:white;">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+            
+            
+            
+            </div>
+
+    </div>
+
+</body>
+</html>

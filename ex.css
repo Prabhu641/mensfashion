@@ -1,0 +1,42 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+input{
+    outline: none;
+    width: 300px;
+}
+@keyframes borderGlow {
+    0% {
+        border:2px groove red;
+       
+        box-shadow: 0 0 20px rgb(255, 0, 0);
+    }
+
+    50% {
+        border: 2px groove rgb(0,136, 255);
+        box-shadow: 0 0 20px rgb(0, 136, 255);
+    }
+
+    100% {
+        border: 2px groove aliceblue;
+        box-shadow: 0 0 20px aliceblue;
+    }
+}
+
+#disp {
+    width: 20%;
+    height: 20vh;
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    animation: borderGlow 2s infinite;
+}

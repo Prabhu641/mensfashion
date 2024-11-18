@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+
+    </script>
+
+</head>
+
+<body id="op">
+    <!-- Top Offer Section -->
+    <div class="container-fluid bg-dark py-3 text-center sticky-top" id="span_tag">
+        <span class="span text-white">Offer up to 50%. Limited offer only
+            <a href="#" class="text-secondary">shop now</a>.
+            <span class="span1" onclick="vanish()" style="cursor:pointer;">&#9747;</span>
+        </span>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top nab">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mens Fashion</a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tops
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./shirts.html">Shirts</a>  </li>
+
+                            <li><a class="dropdown-item" href="#Tshirts">T-Shirts</a></li>
+                            <li><a class="dropdown-item" href="#jackets">Jackets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./pants.html" id="navbarDarkDropdownMenuLink2" role="link"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Bottoms
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink2">
+
+                            <li><a class="dropdown-item" href="./pants.html">Jeans</a></li>
+                            <li><a class="dropdown-item" href="/pants.html/#shorts">Shorts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center">
+
+                    <img src="./images/login.png" class="login-image mx-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+
+                    <span>Login</span>
+                    <img src="./images/signup.png" class="signup-image mx-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1">
+                    <span>Signup</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Username:</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Password:</label>
+                            <input type="password" class="form-control" id="password" required>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-outline-primary" onclick="success()">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Signup</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Username:</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Password:</label>
+                            <input type="password" class="form-control" id="password" required>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-outline-primary" onclick="success()">Signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel Section -->
+    <div id="carouselExampleCaptions" class="carousel slide container1" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img src="./images/mann.png" class="img-fluid mx-4" alt="Responsive image">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                        <span class="span text-danger">Modern Fashion</span>
+                        <h3>Contemporary Men's Style</h3>
+                        <p>Contemporary fashion embraces modern trends with bold colors and unique textures, offering an
+                            edgy yet sleek look.</p>
+                        <button class="btn btn-outline-secondary mx-auto mx-md-0"
+                            style="width: 120px;">Discover</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center">
+                        <img src="./images/man3.png" class="img-fluid mx-4" alt="Responsive image">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                        <span class="span text-danger">Casual Style</span>
+                        <h3>Relaxed Men's Style</h3>
+                        <p>Casual men's fashion focuses on comfortable, everyday wear with soft fabrics, loose fits, and
+                            a relaxed vibe perfect for day-to-day activities.</p>
+                        <button class="btn btn-outline-secondary mx-auto mx-md-0" style="width: 120px;">Browse</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center">
+                        <img src="./images/man10.png" class="img-fluid mx-4" alt="Responsive image">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                        <span class="span text-danger">Casual Style</span>
+                        <h3>Relaxed Men's Style</h3>
+                        <p>Casual men's fashion focuses on comfortable, everyday wear with soft fabrics, loose fits, and
+                            a relaxed vibe perfect for day-to-day activities.</p>
+                        <button class="btn btn-outline-secondary mx-auto mx-md-0" style="width: 120px;">Browse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container cons">
+        <h1 class="h4 text-center text-primary">Best Sellers</h1>
+        <hr>
+        <div class="row g-4">
+            <div class="col col-6 col-md-3">
+                <div class="card">
+                    <img src="" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Shirt</h5>
+                        <p class="card-text">Rs.400</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-6 col-md-3">
+                <div class="card">
+                    <img src="" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Shirt</h5>
+                        <p class="card-text">Rs.400</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-6 col-md-3">
+                <div class="card">
+                    <img src="" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Shirt</h5>
+                        <p class="card-text">Rs.400</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-6 col-md-3">
+                <div class="card">
+                    <img src="" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Shirt</h5>
+                        <p class="card-text">Rs.400</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products Carousel -->
+    <div class="container mt-4">
+        <h1 class="h4 text-center text-primary">Featured Products</h1>
+        <hr>
+
+        <div id="featuredProductsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <div class="row g-4">
+                        <div class="col-6 col-md-3">
+                            <div class="card text-center">
+                                <img src="./images/man12.png" style="width: 100px;" class="img-fluid"
+                                    alt="Responsive image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shirt</h5>
+                                    <p class="card-text">Rs. 500</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card text-center">
+                                <img src="./images/man12.png" style="width: 100px;" class="img-fluid"
+                                    alt="Responsive image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jeans</h5>
+                                    <p class="card-text">Rs. 999</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card text-center">
+                                <img src="./images/man12.png" style="width: 100px;" class="img-fluid"
+                                    alt="Responsive image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shorts</h5>
+                                    <p class="card-text">Rs. 299</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card text-center">
+                                <img src="./images/man12.png" style="width: 100px;" class="img-fluid"
+                                    alt="Responsive image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jacket</h5>
+                                    <p class="card-text">Rs. 1500</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                    <div class="row g-4">
+                        <div class="col-6 col-md-3">
+                            <div class="card text-center">
+                                <img src="./images/man12.png" style="width: 100px;" class="img-fluid"
+                                    alt="Responsive image">
+                                <div class="card-body">
+                                    <h5 class="card-title">T-Shirt</h5>
+                                    <p class="card-text">Rs. 350</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card text-center">
+                                <img src="./images/man12.png" style="width: 100px;" class="img-fluid"
+                                    alt="Responsive image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sweater</h5>
+                                    <p class="card-text">Rs. 800</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card text-center">
+                                <img src="./images/man12.png" style="width: 100px;" class="img-fluid"
+                                    alt="Responsive image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Joggers</h5>
+                                    <p class="card-text">Rs. 400</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card text-center">
+                                <img src="./images/man12.png" style="width: 100px;" class="img-fluid"
+                                    alt="Responsive image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blazer</h5>
+                                    <p class="card-text">Rs. 2500</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredProductsCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredProductsCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="co">
+        <div class="row text-center">
+            <div class="col mb-3">
+                <h1>Lets Stay Connected</h1>
+                <span>Sign up to receive our newsletters</span><br>
+                <input type="text" placeholder="Enter Email Address" class="inp mx-1">
+                <button class="btn btn-outline-danger">Subscribe</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-6 ">
+                    <h1 class="h3">Contact Us</h1>
+                    <i class="fas fa-phone"></i>
+                    <span>+91909028093</span>
+                    <br>
+                    <i class="fas fa-envelope"></i>
+                    <span>sample@mail.com</span>
+                </div>
+                <div class="col col-12 col-md-6">
+                    <h3>Customer Support</h3>
+                    <nav class="nav">
+                        <span class="span mx-1">Privacy Policy</span>
+                        <span class="span mx-1">FAQ</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <span class="span text-center"> &copy; 2024 MensFashion Copyrights Reserved.</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#exampleModal').on('show.bs.modal', function () {
+                $(this).css('margin-top', '14px');
+                $(this).slideToggle(5000);
+            });
+
+            $('#exampleModal1').on('show.bs.modal', function () {
+                $(this).css('margin-top', '14px');
+
+
+                $(this).slideToggle(5000);
+            });
+
+
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>k
